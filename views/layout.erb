@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="/style.css" />
+    </head>
+    <body>
+        <%= erb :"layout/header", :layout => false %>
+        <%= yield %>
+        <%= erb :"layout/footer", :layout => false %>
+    </body>
+</html>
