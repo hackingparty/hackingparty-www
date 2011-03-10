@@ -40,14 +40,6 @@ module HackingParty
 		end
 
 		#
-		# CSS
-		#
-		get '/style.css' do
-			content_type 'text/css', :charset => 'utf-8'
-			scss :style
-		end
-
-		#
 		# Index URL
 		#
 		get '/' do
