@@ -55,6 +55,26 @@ module HackingParty
 			erb :index
 		end
 
+
+		#
+		# User access  
+		#
+		get '/access/signin' do
+			erb :"access/signin"	
+		end
+
+		get '/access/register' do
+			erb :"access/register"	
+		end
+
+		post '/access/register' do
+			#
+		end
+
+		post '/access/register' do
+			#
+		end
+
 	end
 end
 
