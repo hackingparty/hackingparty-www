@@ -1,6 +1,6 @@
 
 
-require 'raklur/database'
+#require 'hackingparty/database'
 
 require 'rubygems'
 require 'sinatra/base'
