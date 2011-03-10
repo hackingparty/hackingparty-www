@@ -1,6 +1,6 @@
 
 
-#require 'hackingparty/database'
+require 'hackingparty/database'
 
 require 'rubygems'
 require 'sinatra/base'
