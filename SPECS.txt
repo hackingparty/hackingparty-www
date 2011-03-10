@@ -1,0 +1,62 @@
+
+====== Hacking Party 2.0 (beta) ======
+
+COLLECTIVE CREATION - NO LIMITS 
+
+===== Fonctionalités =====
+
+Gestion des évènements :
+ * création (nécessite un compte utilisateur) ;
+ * modification ;
+ * annulation (suppression) ;
+ * présentation passés/futurs ( calendrier ) ;
+ * export iCal, RSS, ATOM, etc. (pour intégration sur d'autres services, sites, etc) ;
+ * tickets (limiter le nombre de place, les catégories de personnes présentes, etc) ;
+
+Contenu d'un événement :
+ * date ( planification ) ;
+ * titre (thème) ;
+ * hashtags officiels ;
+ * short url ;
+ * lieu (et openstreetmap automatique) ;
+ * description ( wiki ) ;
+ * personnalisation du logo et couleurs de l'évènement ;
+ * gestion des personnes présentes ;
+   * inscription facilitée ( nom / prénom / mail ) ;
+ * fil de discussion ;
+
+Gestion des utilisateurs :
+ * connexion (login/password, avec FB, avec twitter, etc.) ;
+ * création de compte (inscription à la main, avec FB, avec twitter, etc.) ;
+ * administration du compte ;
+ * lien avec d'autres comptes ;
+
+Gestion des projets :
+ * projects mis en avant ;
+
+Fonctionnaliés sociales :
+ * push sur services externes (publication sur twitter, publication sur fb, etc.) ;
+ * retrouver les coworkers d'une certaine hackingparty ;
+ * retrouver les events d'un certain coworker ;
+ * retrouver les projets d'un certain coworker ;
+ * retrouver les coworkers d'un certain projet ;
+ * notification lors de la modification d'un événement ;
+ * notification lors de la création d'événéments ;
+
+
+===== API =====
+
+===== Roadmap =====
+
+==== V1 ====
+
+ * créer un utilisateur ;
+ * se connecter ;
+ * créer un évènement (nécessite un utilisateur) ;
+ * lister les évènement ;
+ * s'inscrire à l'évènement ;
+
+===== Références =====
+
+
+
