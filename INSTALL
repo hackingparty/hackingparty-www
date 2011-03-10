@@ -2,6 +2,7 @@
 
 == Requirements ==
 
+-- As root ;) -- 
 First install requirement distribution packages :
 
     apt-get install rubygems1.8
