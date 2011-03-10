@@ -18,6 +18,8 @@ Then install ruby-specific packages
     gem install haml >= 3.0.25
     gem install thin >=
 
+IMPORTANT: make sure that ''/var/lib/gems/1.8/bin/'' is in your PATH
+
 == Configuring Thin ==
 
 FIXME
