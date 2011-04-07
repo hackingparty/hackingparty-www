@@ -53,18 +53,19 @@ module HackingParty
 		# User access  
 		#
 		get '/access/signin' do
+			user = User.get
+		#	session[
 			erb :"access/signin"	
 		end
 
 		get '/access/register' do
-			# Create a user !!!
-
 			erb :"access/register"	
 		end
 
 		post '/access/register' do
 			user = User.create
 			user.name = params[:name],
+			user.username = params[:username],
 			user.email = params[:email]
 			user.password = params[:password]
 			user.save
