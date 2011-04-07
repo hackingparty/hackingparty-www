@@ -17,6 +17,7 @@ Then install ruby-specific packages
     gem install shotgun >= 0.9
     gem install haml >= 3.0.25
     gem install thin >=
+    gem install pony
 
 IMPORTANT: make sure that ''/var/lib/gems/1.8/bin/'' is in your PATH
 

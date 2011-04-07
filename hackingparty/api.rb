@@ -5,6 +5,7 @@ require 'hackingparty/database'
 require 'rubygems'
 require 'sinatra/base'
 require 'sass'
+require 'pony'
 
 
 #
@@ -22,8 +23,8 @@ module HackingParty
 		# basic configuration
 		set :default_layout, :layout
 		set :static, true
-		set :public, File.expand_path( File.dirname(__FILE__) + '/../static' )
-		set :views, File.expand_path( File.dirname(__FILE__) + '/../views' )
+		set :public, File.expand_path( File.join [ File.dirname(__FILE__), '..', 'static' ] )
+		set :views, File.expand_path( File.join [ File.dirname(__FILE__) , '..', 'views' ] )
 
 		# for web fonts
 		mime_type :ttf, "application/octet-stream"
@@ -56,15 +57,17 @@ module HackingParty
 		end
 
 		get '/access/register' do
+			# Create a user !!!
+
 			erb :"access/register"	
 		end
 
 		post '/access/register' do
-			#
-		end
-
-		post '/access/register' do
-			#
+			user = User.create
+			user.name = params[:name],
+			user.email = params[:email]
+			user.password = params[:password]
+			user.save
 		end
 
 	end
