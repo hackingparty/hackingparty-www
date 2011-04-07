@@ -1,11 +1,16 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" type="text/css" href="/style.css" />
+		  <link rel="stylesheet" type="text/css" href="/css/screen.css" />
+		  <link rel="stylesheet" type="text/css" href="/css/print.css" />
+		  <!--[if IE]><link rel="stylesheet" type="text/css" href="/css/ie.css" /><![endif]-->
+      <link rel="stylesheet" type="text/css" href="/css/style.css" />
     </head>
     <body>
+    	<div class="container">
         <%= erb :"layout/header", :layout => false %>
         <%= yield %>
         <%= erb :"layout/footer", :layout => false %>
+    	</div>
     </body>
 </html>
