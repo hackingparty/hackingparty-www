@@ -16,9 +16,10 @@ module HackingParty
 		include DataMapper::Resource
 
 		property :id, Serial
-		property :name, String
-		property :email, String
-		property :password, String
+		property :name, String, :required => true, :unique => true
+		property :username, String, :required => true, :unique => true
+		property :email, String, :required => true, :unique => true
+		property :password, String, :required => true, :unique => true
 
 		belongs_to :event
 	end
@@ -27,11 +28,11 @@ module HackingParty
 		include DataMapper::Resource
 
 		property :id, Serial
-		property :name, String
-		property :created_at, DateTime 
-		property :planned_at, DateTime
-		property :location, String
-		property :description, String
+		property :name, String, :required => true, :unique => true
+		property :created_at, DateTime, :required => true, :unique => true
+		property :planned_at, DateTime, :required => true, :unique => true
+		property :location, String, :required => true, :unique => true
+		property :description, String, :required => true, :unique => true
 
 		# FIXME: rename to host ?
 		#has 1, :user, :through => :author
