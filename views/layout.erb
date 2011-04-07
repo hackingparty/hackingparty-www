@@ -4,11 +4,12 @@
 		  <link rel="stylesheet" type="text/css" href="/css/screen.css" />
 		  <link rel="stylesheet" type="text/css" href="/css/print.css" />
 		  <!--[if IE]><link rel="stylesheet" type="text/css" href="/css/ie.css" /><![endif]-->
-      <link rel="stylesheet" type="text/css" href="/css/style.css" />
+      <link rel="stylesheet" type="text/css" href="/css/buttons/screen.css" />
+      <link rel="stylesheet" type="text/css" href="/css/hackingParty.css" />
     </head>
     <body>
     	<div class="container">
-        <%= erb :"layout/header", :layout => false %>
+      	<%= erb :"layout/header", :layout => false %>
         <%= yield %>
         <%= erb :"layout/footer", :layout => false %>
     	</div>
