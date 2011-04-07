@@ -19,18 +19,31 @@ module HackingParty
 		property :name, String
 		property :email, String
 		property :password, String
+
+		belongs_to :event
+	end
+
+	class Event
+		include DataMapper::Resource
+
+		property :id, Serial
+		property :name, String
+		property :created_at, DateTime 
+		property :planned_at, DateTime
+		property :location, String
+		property :description, String
+
+		# FIXME: rename to host ?
+		#has 1, :user, :through => :author
+
+		belongs_to :user
+
+		has 1, :author, User
+	#	has n, :registrants, User
 	end
 
 end
 
 DataMapper.finalize
 #DataMapper.auto_migrate! # auto-deletes & rebuild the database
-
-=begin
-usr = User.create
-usr.name = "Glenn Y. Rolland"
-usr.email = "glenn.rolland@gnuside.com"
-usr.password = "**********"
-usr.save
-=end
 
