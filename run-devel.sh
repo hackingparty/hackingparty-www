@@ -1,3 +1,3 @@
 #!/bin/sh
-export PATH=/var/lib/gems/1.8/bin/:$HOME/.gem/ruby/1.8/bin
-shotgun config.ru -o 0.0.0.0 -p 9393
+#config.ru -o 0.0.0.0 -p 9393
+bundle exec rackup --host 0.0.0.0 --port 9393 config.ru 
